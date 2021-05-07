@@ -24,11 +24,14 @@ public class DobController {
 		
 		return birthdatesrepo.findAll()  ;
 	}
+
+	
 	
 	@PostMapping ("/dob")
 	@ResponseStatus(value = HttpStatus.CREATED)
-	public DobData posting(@RequestBody DobData dobdata){
-		return birthdatesrepo.save(dobdata);
+	public Iterable<DobData> posting(@RequestBody Iterable<DobData> dobdata){
+		return birthdatesrepo.saveAll(dobdata);
+		
 	}
 
 }
