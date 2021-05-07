@@ -1,0 +1,14 @@
+Post sample 
+[{
+   
+    "name": "Akka",
+    "dobMonth": "Sep",
+    "dobday": "23"
+    }
+]
+
+Headers needs to be set 
+Content-Type = application/json
+
+Get and post URL :
+http://localhost:8080/dob
